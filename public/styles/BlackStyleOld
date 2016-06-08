@@ -1,14 +1,12 @@
 .UpperTitle
 {	
-	color: #6A949C;
-	font-weight: bold;
-	font-size: 200%;
+	background-image: url(images/UpperTitleImage5.png);
 	background-size: cover;
 }
 
 .BottomTitle
 {
-	background: rgba(72,106,105, 0);
+	background: rgba(72,106,105, .80);
 }
 
 .SourceName
@@ -19,7 +17,7 @@
 
 table
 {
-	background: rgba(49,68,72, 0);
+	background: rgba(49,68,72, .95);
 }
 
 body
@@ -46,7 +44,7 @@ body
 
 .ValueCellStyle
 {
-	background: rgba(124,154,146, .10);
+	background: rgba(124,154,146, .50);
 	color: #cccccc;
 	font-weight: bold;
 	font-size: 200%;
