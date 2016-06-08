@@ -1,0 +1,60 @@
+body
+{
+	background-color: #c7d3bf;
+	background-attachment: attachment;
+	font-family: verdana;
+}
+
+.UpperTitle
+{
+	background-image: url(PolyLogo.png);
+	background-repeat: no-repeat;
+}
+
+.dateCells
+{
+	border: 0;
+	background: rgba(83,109,108, .70);
+	color: #314448;
+	font-weight: bold;
+	border-width: 0px 5px 0px 5px;
+	font-size: 200%;
+}
+
+.courseValues
+{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.USDvalue
+{
+	background: rgba(124,154,146, .50);
+	color: #314448;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.EUROvalue
+{
+	background: rgba(124,154,146, .50);
+	color: #314448;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.AZBvalue
+{
+	background: rgba(124,154,146, .50);
+	color: #314448;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.KZHvalue
+{
+	background: rgba(124,154,146, .50);
+	color: #314448;
+	font-weight: bold;
+	font-size: 110%;
+}

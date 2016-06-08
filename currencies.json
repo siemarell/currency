@@ -1,0 +1,74 @@
+{
+  "AZN": {
+    "sources": {
+      "1": {
+        "url": "http://www.cbar.az/currencies/",
+        "regex": "Date=\"(.+?)\".+RUB.+?(\\d+\\.\\d+)",
+        "inverted": "1",
+        "name": "ЦБ Азербайджана",
+        "pair": "RUB / AZN"
+      },
+      "2": {
+        "url": "http://www.cbar.az/currencies/",
+        "regex": "Date=\"(.+?)\".+USD.+?(\\d+\\.\\d+)",
+        "inverted": "0",
+        "name": "ЦБ Азербайджана",
+        "pair": "AZN / USD"
+      }
+    },
+    "current": "2",
+    "nominal": "1"
+  },
+  "KZT": {
+    "sources": {
+      "1": {
+        "url": "http://www.nationalbank.kz/rss/rates.xml",
+        "regex": "USD.+(\\d\\d\\.\\d\\d\\.\\d\\d).+>(\\d+\\.\\d+).+>(.+\\d).",
+        "inverted": "0",
+        "name": "ЦБ Казахстана",
+        "pair": "KZT / USD"
+      }
+    },
+    "current": "1",
+    "nominal": "1"
+  },
+  "UZS": {
+    "sources": {
+      "1": {
+        "url": "http://www.cbu.uz/section/rates/widget/xml/rub/",
+        "regex": ">(\\d+-\\d+-\\d+).+rate>(\\d+\\.\\d+)",
+        "inverted": "1",
+        "name": "ЦБ Узбекистана",
+        "pair": "RUB / UZS"
+      }
+    },
+    "current": "1",
+    "nominal": "1000"
+  },
+  "USD": {
+    "sources": {
+      "1": {
+        "url": "http://www.cbr.ru/scripts/XML_daily.asp?date_req=",
+        "regex": "Date=\"(.+?)\"[^]+USD[^]+?Value>(\\d+,\\d+)",
+        "inverted": "0",
+        "name": "ЦБ Российской Федерации",
+        "pair": "RUB / USD"
+      }
+    },
+    "current": "1",
+    "nominal": "1"
+  },
+  "EUR": {
+    "sources": {
+      "1": {
+        "url": "http://www.cbr.ru/scripts/XML_daily.asp?date_req=",
+        "regex": "Date=\"(.+?)\"[^]+EUR[^]+?Value>(\\d+,\\d+)",
+        "inverted": "0",
+        "name": "ЦБ Российской федерации",
+        "pair": "RUB / EUR"
+      }
+    },
+    "current": "1",
+    "nominal": "1"
+  }
+}

@@ -1,0 +1,82 @@
+.UpperTitle
+{	
+	background-image: url(images/UpperTitleImage5.png);
+	background-size: cover;
+}
+
+.BottomTitle
+{
+	background: rgba(72,106,105, .80);
+}
+
+.SourceName
+{
+	font-size: 70%;
+}
+
+table
+{
+	background: rgba(49,68,72, .95);
+}
+
+body
+{
+	background-image: url(images/UsdBackgroundImage.jpg);
+	background-size: cover;
+	margin: 0px;
+}
+
+.dateCells
+{
+	border: 0;
+	background: rgba(00,00,00, .30);
+	color: #6A949C;
+	font-weight: bold;
+	font-size: 250%;
+}
+
+.transperentStyle
+{
+	background-color: transparent;
+}
+
+
+.ValueCellStyle
+{
+	background: rgba(124,154,146, .50);
+	color: #314448;
+	font-weight: bold;
+	font-size: 350%;
+}
+
+.USDvalue
+{
+	background: rgba(124,154,146, .50);
+	color: #314448;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.EUROvalue
+{
+	background: rgba(124,154,146, .50);
+	color: #314448;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.AZNvalue
+{
+	background: rgba(124,154,146, .50);
+	color: #314448;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.KZTvalue
+{
+	background: rgba(124,154,146, .50);
+	color: #314448;
+	font-weight: bold;
+	font-size: 30px;
+}
