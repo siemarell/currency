@@ -7,8 +7,7 @@ var path = require('path');
 var data = '',
 	rates = {},
 	currencies = JSON.parse(fs.readFileSync(path.join(__dirname, '../currencies.json').toString())),
-	forexUrl = 'https://query.yahooapis.com/v1/public/yql?q=select+*+from+yahoo.finance.xchange+where+pair+=+%22USDRUB%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=';
-
+	forexUrl = 'https://api.fixer.io/latest?base=USD';
 delete currencies['UZS'];
 
 function getForexData(){
@@ -18,14 +17,14 @@ function getForexData(){
 		res.on('end', function(){
 			try{
 				var obj = JSON.parse(data);
-				var dateString = obj.query.results.rate.Date.replace(/\//g,'.');
-				var dateArr = dateString.split('.');
+				var dateString = obj.date;
+				var dateArr = dateString.split('-');
 				if (dateArr[1].length == 1){
 					dateArr[1] = '0' + dateArr[1];
 				}
-				dateString = dateArr[1] + '.' + dateArr[0] + '.' + dateArr[2];
+				dateString = dateArr[2] + '.' + dateArr[1] + '.' + dateArr[0];
 				rates['FRX'] = {
-					rate: obj.query.results.rate.Rate.slice(0, -2),
+					rate: Math.round(obj.rates.RUB *100)/100,
 					date: dateString,
 					nominal: '1',
 					name: 'Биржевой курс (Forex)',
